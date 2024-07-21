@@ -11,6 +11,4 @@ public class InputRecord {
     private Double field5;
     private String refkey1;
     private String refkey2;
-
-    // Getters and Setters
 }

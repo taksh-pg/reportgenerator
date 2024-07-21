@@ -16,7 +16,7 @@ public class ReportGenerationScheduler {
     private static final Logger logger = LoggerFactory.getLogger(ReportGenerationScheduler.class);
 
     @Value("${report.scheduler.time}")
-    private String scheduledTime="22:24:00";
+    private String scheduledTime;
 
     private final ReportGenerationTask reportGenerationTask;
 

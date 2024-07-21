@@ -4,9 +4,10 @@ import com.natwest.pravesh.config.ReportGenerationScheduler;
 import com.natwest.pravesh.service.ReportGenerationTask;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
@@ -14,6 +15,7 @@ import java.util.Date;
 
 import static org.mockito.Mockito.*;
 
+@ExtendWith(MockitoExtension.class)
 public class ReportGenerationSchedulerTest {
 
     @Mock
@@ -25,7 +27,7 @@ public class ReportGenerationSchedulerTest {
     // Initialize Mockito annotations
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.openMocks(this);
+        // No need to explicitly call MockitoAnnotations.openMocks in JUnit 5 with @ExtendWith
     }
 
     @Test
